@@ -9,6 +9,7 @@ public abstract class User_class {
     // Начальные переменные(можно изменять)
 
     private int ID_employee;
+    private int ID_client;
     private String full_name_client;
     private String full_name_employee;
 
@@ -22,11 +23,16 @@ public abstract class User_class {
     private String passport_data_of_client;
 
     protected static final HashMap<Integer, String> info_about_employee = new HashMap<>();
+    protected static final HashMap<Integer, String> info_about_client = new HashMap<>();
 
 
 
 
     // Сеттеры и геттеры
+
+    public void setID_client(int id){ ID_client = id;}
+
+    public int getID_client(){return ID_client;}
     public void setID_employee(int id){ ID_employee = id;}
 
     public int getID_employee(){return ID_employee;}
@@ -46,7 +52,7 @@ public abstract class User_class {
         return full_name_employee;
     }
 
-    private void setDate_of_birth_client(Date date_of_birth_client_1){
+    public void setDate_of_birth_client(Date date_of_birth_client_1){
         date_of_birth_client = date_of_birth_client_1;
     }
 

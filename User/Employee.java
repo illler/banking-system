@@ -21,6 +21,8 @@ public class Employee extends User_class{
         System.out.println("Такого пользователя нет!");
     }
 
-    private void find_client(){}
+    private void find_client(int ID){
+
+    }
 
 }
